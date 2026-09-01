@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to IPL Booking!</h1>
+        <h2>Experience the Stadium Energy Live!</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="matches.html">Matches</a>
+            <a href="teams.html">Book Tickets</a>
+            <a href="tickets.html">My Bookings</a>
+            <a href="guidelines.html">Guidelines</a>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div>
+            <button>View Schedule</button>
+            <button>Book Tickets</button>
+        </div>
+
+
+        <h2>Popular Teams</h2>
+
+        <ul>
+            <li>Chennai Super Kings</li>
+            <li>Mumbai Indians</li>
+            <li>Royal Challengers Bangalore</li>
+            <li>Delhi Capitals</li>
+            <li>Kolkata Knight Riders</li>
+        </ul>
+
+        <section>
+            <h2>Match Schedule</h2>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Match No.</th>
+                        <th>Teams</th>
+                        <th>Date & Time</th>
+                        <th>Venue</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>RCB vs CSK</td>
+                        <td>22 March 2026, 7:30 PM</td>
+                        <td>M. Chinnaswamy Stadium, Bengaluru</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>MI vs KKR</td>
+                        <td>23 March 2026, 7:30 PM</td>
+                        <td>Wankhede Stadium, Mumbai</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>SRH vs RR</td>
+                        <td>24 March 2026, 7:30 PM</td>
+                        <td>Rajiv Gandhi Stadium, Hyderabad</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>DC vs PBKS</td>
+                        <td>25 March 2026, 7:30 PM</td>
+                        <td>Arun Jaitley Stadium, Delhi</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>GT vs LSG</td>
+                        <td>26 March 2026, 7:30 PM</td>
+                        <td>Narendra Modi Stadium, Ahmedabad</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </section>
+
+        <section>
+            <h2>Book Tickets</h2>
+
+            <form action="/confirm" method="post">
+
+                <label>Match:</label>
+                <select name="match">
+                    <option>RCB vs CSK</option>
+                    <option>MI vs KKR</option>
+                    <option>SRH vs RR</option>
+                    <option>DC vs PBKS</option>
+                    <option>GT vs LSG</option>
+                </select>
+
+                <label>Stand Category:</label>
+                <select name="stand">
+                    <option>General</option>
+                    <option>Premium</option>
+                    <option>VIP</option>
+                </select>
+
+                <label>Number of Tickets:</label>
+                <input type="number" name="quantity" min="1">
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>
