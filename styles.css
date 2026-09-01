@@ -1,41 +1,47 @@
-body{
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0; 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header{
+header {
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: white;
 }
 
-header:hover{
+header:hover {
     background-color: rgb(184, 0, 98);
     transition: background-color 0.7s;
 }
 
-nav{
-  background-color: #333;
-  padding: 10px;
+
+/* Main Navigation */
+.main-nav {
+    background-color: #333;
+    padding: 10px;
 }
 
-nav:hover{
+.main-nav:hover {
     background-color: rgb(184, 0, 98);
     transition: background-color 0.7s;
 }
 
-nav a{
+.main-nav a {
     color: white;
     text-decoration: none;
     margin-right: 20px;
 }
 
+
+/* Main Content */
 main {
     padding: 20px;
 }
 
+
+/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -52,17 +58,45 @@ th {
     color: white;
 }
 
-button{
+
+/* Buttons */
+button {
     padding: 10px;
     background-color: rgb(25, 126, 208);
     cursor: pointer;
     border-radius: 20px;
     color: white;
-    border : none;
+    border: none;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-button:hover{
+button:hover {
     background-color: rgb(184, 0, 98);
     transition: background-color 0.7s;
 }
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: rgb(184, 0, 98);
+}
+
