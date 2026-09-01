@@ -1,21 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
-  
-  <body>
 
-    <nav>
-      <ul>
-        <li>Matches</li>
-        <li>Book Tickets</li>
-        <li>My bookings</li>
-      </ul>
-    </nav>
-    
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>IPL Booking</title>
+</head>
+
+<body>
+
+```
+<!-- Navigation -->
+<nav class="main-nav">
+
+    <div class="nav-container">
+
+        <div class="logo">
+            IPL Booking
+        </div>
+
+        <div class="nav-links">
+            <a href="matches.html">Matches</a>
+            <a href="teams.html">Book Tickets</a>
+            <a href="tickets.html">My Bookings</a>
+            <a href="guidelines.html">Guidelines</a>
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- Header / Hero -->
+<header>
+
+    <h1>Welcome to IPL Booking!</h1>
+
+    <h2>Experience the Stadium Energy Live!</h2>
+
+</header>
+
+
+<!-- Main Content -->
+<main>
+
+    <!-- Buttons -->
+    <div class="hero-buttons">
+
+        <button>View Schedule</button>
+
+        <button>Book Tickets</button>
+
+    </div>
+
+
+    <!-- Popular Teams -->
     <h2>Popular Teams</h2>
-    <ul>
-      <li>Chennai Super Kings</li>
-      <li>Mumbai Indians</li>
-      <li> Royal Challengers Bangalore</li>
+
+    <ul class="team-list">
+
+        <li>Chennai Super Kings</li>
+
+        <li>Mumbai Indians</li>
+
+        <li>Royal Challengers Bangalore</li>
+
+        <li>Delhi Capitals</li>
+
+        <li>Kolkata Knight Riders</li>
+
     </ul>
-  </body>
+
+
+    <!-- Match Schedule -->
+    <section>
+
+        <h2>Match Schedule</h2>
+
+        <!-- Table wrapper for horizontal scrolling -->
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Match No.</th>
+                        <th>Teams</th>
+                        <th>Date & Time</th>
+                        <th>Venue</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>RCB vs CSK</td>
+                        <td>22 March 2026, 7:30 PM</td>
+                        <td>M. Chinnaswamy Stadium, Bengaluru</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>MI vs KKR</td>
+                        <td>23 March 2026, 7:30 PM</td>
+                        <td>Wankhede Stadium, Mumbai</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>SRH vs RR</td>
+                        <td>24 March 2026, 7:30 PM</td>
+                        <td>Rajiv Gandhi Stadium, Hyderabad</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>DC vs PBKS</td>
+                        <td>25 March 2026, 7:30 PM</td>
+                        <td>Arun Jaitley Stadium, Delhi</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>GT vs LSG</td>
+                        <td>26 March 2026, 7:30 PM</td>
+                        <td>Narendra Modi Stadium, Ahmedabad</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+
+        <h2>Book Tickets</h2>
+
+
+        <!-- CSS GRID -->
+        <div class="booking-grid">
+
+
+            <!-- Booking Form -->
+            <div class="booking-form">
+
+                <h3>Ticket Booking Form</h3>
+
+                <form action="/confirm" method="post">
+
+                    <label for="match">Match:</label>
+
+                    <select id="match" name="match">
+
+                        <option>RCB vs CSK</option>
+
+                        <option>MI vs KKR</option>
+
+                        <option>SRH vs RR</option>
+
+                        <option>DC vs PBKS</option>
+
+                        <option>GT vs LSG</option>
+
+                    </select>
+
+
+                    <label for="stand">Stand Category:</label>
+
+                    <select id="stand" name="stand">
+
+                        <option>General</option>
+
+                        <option>Premium</option>
+
+                        <option>VIP</option>
+
+                    </select>
+
+
+                    <label for="quantity">Number of Tickets:</label>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        min="1"
+                    >
+
+
+                    <button type="submit">
+                        Confirm Booking
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Booking Summary -->
+            <div class="booking-summary">
+
+                <h3>Booking Summary</h3>
+
+                <p><strong>Match:</strong> RCB vs CSK</p>
+
+                <p><strong>Stand:</strong> Premium</p>
+
+                <p><strong>Tickets:</strong> 2</p>
+
+                <p><strong>Venue:</strong> M. Chinnaswamy Stadium</p>
+
+                <p><strong>Date:</strong> 22 March 2026</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- Footer -->
+<footer>
+
+    <p>&copy; 2026 IPL Booking. All Rights Reserved.</p>
+
+    <nav class="footer-nav">
+
+        <a href="index.html">Home</a>
+
+        <a href="matches.html">Matches</a>
+
+        <a href="teams.html">Teams</a>
+
+        <a href="tickets.html">My Bookings</a>
+
+        <a href="guidelines.html">Guidelines</a>
+
+    </nav>
+
+</footer>
+```
+
+</body>
+
 </html>
